@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:image_picker/image_picker.dart';
 
 class AddProduct extends StatefulWidget {
@@ -67,8 +66,8 @@ class _AddProductState extends State<AddProduct> {
                               return AlertDialog(
                                 alignment: Alignment.bottomCenter,
                                 title: const Text('Select Image'),
-                                content:
-                                    const Text('Please choose one for get image'),
+                                content: const Text(
+                                    'Please choose one for get image'),
                                 actions: [
                                   ListTile(
                                     onTap: () async {
