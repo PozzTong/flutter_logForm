@@ -177,7 +177,7 @@ class _MainBoardState extends State<MainBoard> {
                   color: Colors.blue,
                   image: const DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage(''))),
+                      image: AssetImage('assets/image/1.jpg'))),
             ),
           ),
           Container(
