@@ -16,6 +16,7 @@ class _AddProductState extends State<AddProduct> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Add Product'),
       ),
@@ -101,7 +102,7 @@ class _AddProductState extends State<AddProduct> {
             padding: const EdgeInsets.all(8.0),
             child: CupertinoButton(
                 color: Theme.of(context).primaryColor,
-                child: const Text('save'),
+                child: const Text('Save'),
                 onPressed: () {}),
           )
         ],
