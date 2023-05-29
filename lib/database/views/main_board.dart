@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_sale_app_vscode/database/views/add_product.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
+
 
 import '../connection/connection_db.dart';
 import '../models/product_model.dart';
@@ -179,7 +177,7 @@ class _MainBoardState extends State<MainBoard> {
                   color: Colors.blue,
                   image: const DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage('assets/image/1.jpg'))),
+                      image: AssetImage(''))),
             ),
           ),
           Container(
