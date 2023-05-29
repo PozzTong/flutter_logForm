@@ -66,23 +66,23 @@ class _AddProductState extends State<AddProduct> {
                             builder: (context) {
                               return AlertDialog(
                                 alignment: Alignment.bottomCenter,
-                                title: Text('Select Image'),
+                                title: const Text('Select Image'),
                                 content:
-                                    Text('Please choose one for get image'),
+                                    const Text('Please choose one for get image'),
                                 actions: [
                                   ListTile(
                                     onTap: () async {
                                       selectImage();
                                     },
-                                    leading: Icon(Icons.image),
-                                    title: Text('Gallery'),
+                                    leading: const Icon(Icons.image),
+                                    title: const Text('Gallery'),
                                   ),
                                   ListTile(
                                     onTap: () async {
                                       takeImage();
                                     },
-                                    leading: Icon(Icons.camera_alt),
-                                    title: Text('Camera'),
+                                    leading: const Icon(Icons.camera_alt),
+                                    title: const Text('Camera'),
                                   )
                                 ],
                               );
