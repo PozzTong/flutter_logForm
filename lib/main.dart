@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sale_app_vscode/database/views/main_board.dart';
 import 'package:flutter_sale_app_vscode/sharedPreference/views/auth/signin_screen.dart';
 
 void main(List<String> args) {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignInScreen(),
+      home: MainBoard(),
     );
   }
 }
