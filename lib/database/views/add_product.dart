@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_sale_app_vscode/database/connection/connection_db.dart';
+import 'package:flutter_sale_app_vscode/database/models/product_model.dart';
 
 import 'package:image_picker/image_picker.dart';
 
@@ -103,7 +105,12 @@ class _AddProductState extends State<AddProduct> {
             child: CupertinoButton(
                 color: Theme.of(context).primaryColor,
                 child: const Text('Save'),
-                onPressed: () {}),
+                onPressed: () async {
+                  ConnectionDB().insertProduct(ProductModel(
+                      id: DateTime.now().microsecondsSinceEpoch,
+                      name: nameController.text,
+                      price: double.parse(priceController.text)));
+                }),
           )
         ],
       ),
